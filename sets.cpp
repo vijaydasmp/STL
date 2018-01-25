@@ -40,5 +40,30 @@ class Triangle
         //cout<<hash<<endl;
         return hash;
     }
-    //friend ostream& operator<<(ostream&s, Triangle& t1);
 };
+void set_pratice()
+{
+    set<Triangle> TriangleSet;
+
+    Triangle t1(1,2,3);
+    Triangle t2(3,4,5);
+    Triangle t3(5,6,7);
+    Triangle t4(3,4,5);
+    Triangle t5(13,4,5);
+
+
+    t1.gethash();
+    t2.gethash();
+    t3.gethash();
+    t4.gethash();
+
+
+    TriangleSet.insert(t1);
+    TriangleSet.insert(t2);
+    TriangleSet.insert(t3);
+    TriangleSet.insert(t4);
+    TriangleSet.insert(t5);
+
+    cout<<TriangleSet.size();
+   // cout<<"Size = "<<TriangleSet.size();
+}
